@@ -1,0 +1,25 @@
+{
+  "name": "traversy-tutorials",
+  "version": "1.0.0",
+  "description": "A collection of projects based on Traversy Media tutorials.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrwmacintire/traversy-tutorials.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "Multer",
+    "GridFS"
+  ],
+  "author": "John MacIntire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrwmacintire/traversy-tutorials/issues"
+  },
+  "homepage": "https://github.com/jrwmacintire/traversy-tutorials#readme"
+}
