@@ -146,7 +146,7 @@ app.get('/image/:filename', (req, res) => {
 // @desc Delete file
 app.delete('/files/:id', (req, res) => {
     console.log(`Received request to delete file id: ${req.params.id}`);
-    gfs.remove({ _id: req.params.id, root: 'uploads' }, function(err, gridFsBucket) {
+    gfs.deleteOne({ _id: req.params.id, root: 'uploads' }, function(err, gridFsBucket) {
         if(err) {
             return res.status(404).json({ err: err });
         }
