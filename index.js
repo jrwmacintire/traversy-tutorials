@@ -145,7 +145,8 @@ app.get('/image/:filename', (req, res) => {
 // @route DELETE /files/:id
 // @desc Delete file
 app.delete('/files/:id', (req, res) => {
-    gfs.remove({ _id: req.params.id, root: 'uploads' }, (err, gridStore) => {
+    console.log(`Received request to delete file id: ${req.params.id}`);
+    gfs.remove({ _id: req.params.id, root: 'uploads' }, function(err, gridFsBucket) {
         if(err) {
             return res.status(404).json({ err: err });
         }
